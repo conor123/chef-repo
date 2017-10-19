@@ -1,0 +1,13 @@
+{
+  "name": "lamp-stack",
+  "description": "Wordpress web server role",
+  "run_list": [
+
+    "recipe[mysql-default]",
+    //"recipe[yum-mysql-community]",
+    //"recipe[yum-epel]",
+    "recipe[php]",
+    "recipe[php::module_mysql]",
+    "recipe[apache]"
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "name": "web2",
+  "description": "Web server role for conorryan.ie",
+  "run_list": [
+    "recipe[myusers]"
+  ]
+}

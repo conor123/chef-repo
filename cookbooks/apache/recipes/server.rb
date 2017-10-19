@@ -18,9 +18,9 @@ package 'httpd'
 # @see https://docs.chef.io/resource_template.html#file-specificity
 #
 
-template '/var/www/html/index.html' do
-  source 'index.html.erb'
-end
+#template '/var/www/html/index.html' do
+#  source 'index.html.erb'
+#end
 
 #
 # The service, named "httpd" is enabled and started
@@ -35,13 +35,13 @@ file '/var/www/html/index.html' do
   action :delete
 end
 
-file '/etc/httpd/conf/httpd.conf' do
-  action :delete
-end
+#file '/etc/httpd/conf/httpd.conf' do
+#  action :delete
+#end
 
-template("/etc/httpd/conf/httpd.conf") do
-  source("httpd.conf.erb")
-end
+#template("/etc/httpd/conf/httpd.conf") do
+#  source("httpd.conf.erb")
+#end
 
 
 

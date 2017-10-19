@@ -1,0 +1,14 @@
+{
+  "name": "web",
+  "description": "web server role",
+  "default_attributes": {
+    "apache-test": {
+      "attribute1": "Hello from attribute 1"
+    }
+  },
+  "run_list": [
+    "recipe[myusers]",
+    "recipe[workstation]",
+    "recipe[apache]"
+  ]
+}

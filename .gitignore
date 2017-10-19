@@ -1,7 +1,14 @@
 cd ..
 # Chef
+.chef/
 .chef/*.pem
 .chef/encrypted_data_bag_secret
+
+#Intellij
+.idea/
+
+# vAgrant
+.vagrant/
 
 # Ruby
 .rake_test_cache
@@ -51,3 +58,6 @@ Thumbs.db
 ehthumbs.db
 Desktop.ini
 $RECYCLE.BIN/
+
+# Misc
+org.json

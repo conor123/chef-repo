@@ -1,0 +1,54 @@
+{
+  "create": {
+    "actors": [
+      "conor",
+      "pivotal",
+      "web1"
+    ],
+    "groups": [
+      "admins"
+    ]
+  },
+  "read": {
+    "actors": [
+      "conor",
+      "pivotal",
+      "web1"
+    ],
+    "groups": [
+      "admins",
+      "users"
+    ]
+  },
+  "update": {
+    "actors": [
+      "conor",
+      "pivotal",
+      "web1"
+    ],
+    "groups": [
+      "admins"
+    ]
+  },
+  "delete": {
+    "actors": [
+      "conor",
+      "pivotal",
+      "web1"
+    ],
+    "groups": [
+      "admins",
+      "users"
+    ]
+  },
+  "grant": {
+    "actors": [
+      "conor",
+      "pivotal",
+      "web1"
+    ],
+    "groups": [
+      "admins"
+    ]
+  }
+}

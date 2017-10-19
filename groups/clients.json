@@ -1,0 +1,9 @@
+{
+  "name": "clients",
+  "clients": [
+    "conorryan-validator",
+    "load-balancer",
+    "web1",
+    "web2"
+  ]
+}
