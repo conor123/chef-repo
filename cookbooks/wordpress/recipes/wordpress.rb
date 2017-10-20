@@ -10,7 +10,7 @@ ruby_block "install_wordpress" do
     system 'wget https://wordpress.org/latest.tar.gz'
     system 'tar -xzf latest.tar.gz --strip-components=1 && rm latest.tar.gz'
   end
-  not_if { ::File.exist?(File.join(node[:wordpress][:app_root], 'wp-settings.php')) }
+  #not_if { ::File.exist?(File.join(node[:wordpress][:app_root], 'wp-settings.php')) }
   action :create
 end
 
@@ -36,8 +36,8 @@ directory '/var/www/html/' do
 end
 
 execute "chown-apache" do
-  command "chown -R apache:apache /var/www/html/wp-content"
+  command "chown -R apache: /var/www/html/wp-content"
   user "root"
   action :run
-  not_if "stat -c %U /var/www/html/wp-content |grep apache"
+  not_if "stat -c %U /var/www/html/wp-content |grep www-data"
 end
