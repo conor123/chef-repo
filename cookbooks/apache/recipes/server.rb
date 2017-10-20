@@ -6,6 +6,7 @@
 #
 package 'httpd'
 
+
 #
 # The template, named '/var/www/html/index.html' is created
 #   with the source 'index.html.erb'
@@ -39,9 +40,9 @@ end
 #  action :delete
 #end
 
-#template("/etc/httpd/conf/httpd.conf") do
-#  source("httpd.conf.erb")
-#end
+template("/etc/httpd/conf/httpd.conf") do
+  source("httpd.conf.2.erb")
+end
 
 
 
