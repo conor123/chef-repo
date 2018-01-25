@@ -2,6 +2,7 @@
   "name": "windows-webserver-1",
   "description": "Windows web server role",
   "run_list": [
-    "recipe[chocolatey]"
+    "recipe[chocolatey]",
+    "recipe[windows-git-repo-test]"
   ]
 }
