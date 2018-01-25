@@ -5,4 +5,4 @@
 # Copyright (c) 2015 The Authors, All Rights Reserved.
 
 include_recipe 'apache::server'
-include_recipe 'apache::mod-ssl'
+#include_recipe 'apache::mod-ssl'

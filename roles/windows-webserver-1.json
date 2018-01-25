@@ -1,0 +1,7 @@
+{
+  "name": "windows-webserver-1",
+  "description": "Windows web server role",
+  "run_list": [
+    "recipe[chocolatey]"
+  ]
+}

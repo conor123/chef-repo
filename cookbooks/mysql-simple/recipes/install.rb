@@ -6,4 +6,7 @@
 package 'mysql'
 package 'mysql-server'
 
-
+execute "Start MYSQL Service" do
+  user "root"
+  command "service mysqld start"
+end
